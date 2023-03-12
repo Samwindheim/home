@@ -1,3 +1,4 @@
 [submodule "synth"]
 	path = synth
 	url = https://github.com/Samwindheim/synthesizer.git
+	branch = main
