@@ -1,13 +1,13 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f3f8fc; /* Light blue background */
+    background-color: #ffffff; /* Light blue background */
 }
 
 header {
-    background-color: #f3f8fc; /* Lightest blue for the header */
+    background-color: #ffffff; /* Lightest blue for the header */
     color: #333; /* Dark text for contrast */
     text-align: center;
     padding: 1em;
@@ -54,7 +54,8 @@ main {
     max-width: 900px;
     margin: 2em auto;
     padding: 1em;
-    text-align: left; /* Align content to the left */
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items to the start */
 }
 
 section {
@@ -104,8 +105,38 @@ button:hover, a.download-link:hover {
 }
 
 .portrait {
-    width: 200px;
+    width: 200px; /* Set width for the portrait */
     height: auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-right: 2em;
+    margin-right: 2em; /* Space between portrait and description */
+    border-radius: 15px; /* Adjust this value for more or less rounding */
+}
+
+.description {
+    flex: 1; /* Allow description to take remaining space */
+}
+
+.social-links {
+    margin-top: 1em; /* Space above the buttons */
+}
+
+.button {
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px 15px; /* Add some padding */
+    margin: 5px; /* Space between buttons */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+#about {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Stack items vertically */
 }
