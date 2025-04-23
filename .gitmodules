@@ -2,3 +2,6 @@
 	path = synth
 	url = https://github.com/Samwindheim/synthesizer.git
 	branch = main
+[submodule "skippy-bird"]
+	path = skippy-bird
+	url = https://github.com/Samwindheim/skippy-bird.git
